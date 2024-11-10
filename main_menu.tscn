@@ -1,0 +1,204 @@
+[gd_scene load_steps=4 format=3 uid="uid://catwvwah8nqjv"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_ic5n2"]
+[ext_resource type="Texture2D" uid="uid://cats3hawy0orr" path="res://Portrait background.png" id="1_my2ah"]
+[ext_resource type="Script" path="res://PortraitBackground.gd" id="2_rkmox"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ic5n2")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1173.0
+offset_bottom = 649.0
+color = Color(0.741176, 1, 1, 1)
+
+[node name="fade" type="ColorRect" parent="."]
+offset_left = -1000.0
+offset_top = -1510.0
+offset_right = 124.0
+offset_bottom = -654.0
+rotation = 0.986111
+color = Color(0, 0.180392, 0.941176, 0.0784314)
+
+[node name="PortraitBackground" type="Sprite2D" parent="."]
+modulate = Color(0, 0.192157, 0.929412, 0.180392)
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = ExtResource("1_my2ah")
+script = ExtResource("2_rkmox")
+
+[node name="PortraitBackground2" type="Sprite2D" parent="."]
+modulate = Color(0, 0.192157, 0.929412, 0.180392)
+texture_filter = 1
+position = Vector2(-4.57764e-05, -2640)
+scale = Vector2(5, 5)
+texture = ExtResource("1_my2ah")
+script = ExtResource("2_rkmox")
+
+[node name="stylized_block" type="ColorRect" parent="."]
+offset_left = 1000.0
+offset_top = 1510.0
+offset_right = 2124.0
+offset_bottom = 2366.0
+rotation = 0.986111
+color = Color(0, 0.180392, 0.941176, 1)
+
+[node name="nodeInner" type="ColorRect" parent="."]
+offset_left = -500.0
+offset_top = 42.0
+offset_right = -118.0
+offset_bottom = 82.0
+
+[node name="nodeOuter" type="ColorRect" parent="nodeInner"]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 377.0
+offset_bottom = 35.0
+color = Color(0, 0.462745, 1, 1)
+
+[node name="nodeInner2" type="ColorRect" parent="."]
+offset_left = -600.0
+offset_top = 189.0
+offset_right = -218.0
+offset_bottom = 229.0
+
+[node name="nodeOuter" type="ColorRect" parent="nodeInner2"]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 377.0
+offset_bottom = 35.0
+color = Color(0, 0.462745, 1, 1)
+
+[node name="nodeInner3" type="ColorRect" parent="."]
+offset_left = -1000.0
+offset_top = 326.0
+offset_right = -618.0
+offset_bottom = 366.0
+
+[node name="nodeOuter" type="ColorRect" parent="nodeInner3"]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 377.0
+offset_bottom = 35.0
+color = Color(0, 0.462745, 1, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = -1500.0
+offset_top = 459.0
+offset_right = -293.0
+offset_bottom = 661.0
+color = Color(0.639216, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect4"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 21.0
+offset_right = 482.0
+offset_bottom = 128.0
+theme_override_colors/font_shadow_color = Color(0.27451, 0, 0.372549, 1)
+theme_override_constants/shadow_offset_x = 7
+theme_override_constants/shadow_offset_y = 4
+theme_override_font_sizes/normal_font_size = 75
+text = "Capital One"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="ColorRect4"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 132.0
+offset_right = 582.0
+offset_bottom = 181.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.27451, 0, 0.372549, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/normal_font_size = 35
+text = "Use 'W' and 'S' to navigate"
+fit_content = true
+scroll_active = false
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+offset_left = 5000.0
+offset_top = 459.0
+offset_right = 6321.0
+offset_bottom = 467.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 655.0
+offset_right = 890.0
+offset_bottom = 102.0
+theme_override_colors/default_color = Color(1, 0.823529, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.27451, 0, 0.372549, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_font_sizes/normal_font_size = 75
+text = "Mode:"
+scroll_active = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 655.0
+offset_top = 102.0
+offset_right = 1154.0
+offset_bottom = 206.0
+theme_override_colors/default_color = Color(1, 0.823529, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.27451, 0, 0.372549, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_font_sizes/normal_font_size = 75
+scroll_active = false
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+offset_left = 975.0
+offset_top = 634.0
+offset_right = 1150.0
+offset_bottom = 646.0
+theme_override_font_sizes/normal_font_size = 8
+text = "1"
+scroll_active = false
+
+[node name="Credits Screen" type="ColorRect" parent="."]
+offset_right = 1194.0
+offset_bottom = 688.0
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Credits Screen"]
+layout_mode = 0
+offset_left = 149.5
+offset_top = 250.0
+offset_right = 1002.5
+offset_bottom = 398.0
+theme_override_font_sizes/normal_font_size = 100
+text = "Capital One Dash"
+scroll_active = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Credits Screen"]
+visible = false
+layout_mode = 0
+offset_left = 195.0
+offset_top = 286.0
+offset_right = 326.0
+offset_bottom = 315.0
+theme_override_font_sizes/normal_font_size = 20
+text = "Presented By"
+scroll_active = false
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="Credits Screen"]
+visible = false
+layout_mode = 0
+offset_left = 195.0
+offset_top = 316.0
+offset_right = 715.0
+offset_bottom = 365.0
+theme_override_font_sizes/normal_font_size = 30
+text = "Jack, Trevor, Nitin, and Nzoyisaba"
+scroll_active = false
+
+[node name="ColorRect" type="ColorRect" parent="Credits Screen"]
+layout_mode = 0
+offset_left = -1000.0
+offset_top = 259.0
+offset_right = -291.0
+offset_bottom = 383.0

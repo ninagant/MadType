@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2hlxggia5i46"]
+
+[ext_resource type="Texture2D" uid="uid://x8cr2icxdh0m" path="res://MK_Trailer.png" id="1_4ip2p"]
+[ext_resource type="Texture2D" uid="uid://bb4lb31acxtf4" path="res://TV(3).png" id="2_o2j8p"]
+[ext_resource type="Texture2D" uid="uid://bpitoaepb7d77" path="res://TV.png" id="3_kr4mw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_125hd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_o2j8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kr4mw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1159.0
+offset_bottom = 659.0
+color = Color(0, 0, 0, 1)
+
+[node name="MkTrailer" type="Sprite2D" parent="."]
+position = Vector2(557, 200)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_4ip2p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(145, 540)
+sprite_frames = SubResource("SpriteFrames_125hd")
+autoplay = "default"
+frame_progress = 0.574514
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 283.0
+offset_top = 477.0
+offset_right = 1131.0
+offset_bottom = 617.0
+theme_override_font_sizes/normal_font_size = 45
+text = "Perhaps some things need to be found... some sooner than others..."
